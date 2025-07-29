@@ -7,6 +7,7 @@ export const CountdownExample = () => {
 
   return (
     <div>
+      <h2>useCountdown 예제</h2>
       <h2>{formattedDate(targetDate)}까지 남은 시간</h2>
       <p>{`${days}일 ${hours}시간 ${minutes}분 ${seconds}초`}</p>
     </div>

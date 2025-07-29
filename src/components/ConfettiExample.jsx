@@ -5,7 +5,7 @@ export const ConfettiExample = () => {
 
   return (
     <div>
-      <h2>useConfetti 실습</h2>
+      <h2>useConfetti 예제</h2>
       <button className="modern-btn" onClick={fire}>
         폭죽 발사
       </button>
