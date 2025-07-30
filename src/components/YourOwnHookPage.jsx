@@ -1,11 +1,19 @@
+import React from "react";
 import { useSomething } from "../hooks/useSomething";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+  const { something, onChange } = useSomething("");
+
   return (
     <div>
       <h2>useSomething 실습</h2>
+      <label>
+        값을 입력해 보세요:&nbsp;
+        <input type="text" value={something} onChange={onChange} />
+      </label>
+      <p>
+        입력된 값: <strong>{something}</strong>
+      </p>
     </div>
   );
 };
