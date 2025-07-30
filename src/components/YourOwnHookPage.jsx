@@ -1,11 +1,15 @@
-import { useSomething } from "../hooks/useSomething";
+import { useName } from "../hooks/useMyName";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+  const { name, changeName } = useName();
+
   return (
     <div>
       <h2>useSomething 실습</h2>
+      <p>{name}</p>
+      <button className="modern-btn" onClick={changeName}>
+        누구게
+      </button>
     </div>
   );
 };

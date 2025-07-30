@@ -8,5 +8,16 @@ export const useConfetti = () => {
       origin: { y: 0.6 },
     });
   };
-  return { fire };
+
+  const fire2 = () => {
+    confetti({
+      particleCount: 100,
+      spread: 360,
+      origin: {
+        x: Math.random(),
+        y: Math.random() - 0.2,
+      },
+    });
+  };
+  return { fire, fire2 };
 };
