@@ -1,6 +1,5 @@
 import { useCountdown } from "../hooks/useCountdown";
 
-
 export const CountdownExample = () => {
   
   const timeLeft = {useCountdown};
