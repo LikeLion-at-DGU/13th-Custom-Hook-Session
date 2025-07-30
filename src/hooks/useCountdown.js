@@ -30,5 +30,5 @@ export const useCountdown = () => {
     return () => clearInterval(timer);
   }, [targetDate]);
 
-  return timeLeft;
+  return {timeLeft};
 };

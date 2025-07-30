@@ -1,7 +1,7 @@
 import { useCountdown } from "../hooks/useCountdown"
 
 export const CountdownExample = () => {
-  const timeLeft = useCountdown();
+  const {timeLeft} = useCountdown();
   
   return (
       <div>
