@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import {useCountdown} from "../hooks/useCountdown"
 
 export const CountdownExample = () => {
-  const {timeLeft}=useCountdown();
+  const targetDate = new Date("2025-08-25T00:00:00");
+  const timeLeft=useCountdown(targetDate);
 
 
   return (
