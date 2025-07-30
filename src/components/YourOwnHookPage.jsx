@@ -1,11 +1,16 @@
-import { useSomething } from "../hooks/useSomething";
+
+import { useToggle } from "../hooks/useToggle";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+  const { isOn, toggle } = useToggle();
+
   return (
     <div>
-      <h2>useSomething 실습</h2>
+      <h2>useToggle 실습!!</h2>
+      <p>현재 상태: {isOn ? "❤️" : "⭐"}</p>
+      <button onClick={toggle}>
+        {isOn ? "하트" : "별"}
+      </button>
     </div>
   );
 };
