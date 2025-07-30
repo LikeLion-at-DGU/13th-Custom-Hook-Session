@@ -1,5 +1,11 @@
-export const useSomething = () => {
+export const useModal = () => {
   // 여러분의 use{Something}을 만들어주세요!
   // 정답은 없습니다. 커스텀훅의 필요성을 스스로 느껴보세요.
   // 아이디어를 생각하고, 스스로 구현하다가 어려우면 손 들어주세요!
-};
+    const modal = () => {
+      alert("안뇽!! 내 인스타 아이디야 -> seoyeon_435 ");
+    };
+    
+    return { modal };
+
+  };
