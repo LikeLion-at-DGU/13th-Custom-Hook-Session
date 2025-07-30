@@ -1,11 +1,12 @@
-import { useSomething } from "../hooks/useSomething";
+import { useErasebtn } from "../hooks/useErasebtn";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+   const { erase,toggleErase } = useErasebtn(true);
+  
   return (
     <div>
-      <h2>useSomething 실습</h2>
+          {erase ? <div>안녕</div> : null}
+          <button onClick={toggleErase}>눌러보기</button>
     </div>
   );
 };
