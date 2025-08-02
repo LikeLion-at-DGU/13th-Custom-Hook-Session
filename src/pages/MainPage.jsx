@@ -3,7 +3,7 @@ import { ConfettiExample } from "../components/ConfettiExample";
 import { CountdownExample } from "../components/CountdownExample";
 import { WindowSizeExample } from "../components/WindowSizeExample";
 import { FetchExample } from "../components/FetchExample";
-import { YourOwnHookPage } from "../components/YourOwnHookPage";
+import { RollDice } from "../components/YourOwnHookPage";
 import "../styles/Main.styled.css";
 
 export const MainPage = () => {
@@ -20,7 +20,7 @@ export const MainPage = () => {
       case 4:
         return <FetchExample />;
       case 5:
-        return <YourOwnHookPage />;
+        return <RollDice />;
       default:
         return null;
     }
@@ -46,7 +46,7 @@ export const MainPage = () => {
             </button>
 
             <button className="modern-btn" onClick={() => setSelected(5)}>
-              useSomething
+              useDice
             </button>
           </div>
         </>
