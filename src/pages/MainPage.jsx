@@ -46,7 +46,7 @@ export const MainPage = () => {
             </button>
 
             <button className="modern-btn" onClick={() => setSelected(5)}>
-              useSomething
+              useFortuneCookie
             </button>
           </div>
         </>

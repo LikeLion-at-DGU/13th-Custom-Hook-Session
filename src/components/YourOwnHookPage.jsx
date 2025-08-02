@@ -1,11 +1,40 @@
-import { useSomething } from "../hooks/useSomething";
+import { useFortuneCookie } from "../hooks/useFortuneCookie";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+  const { fortunes, selected, selectFortune } = useFortuneCookie();
+
   return (
     <div>
-      <h2>useSomething 실습</h2>
+      {!selected ? (
+        <>
+          <h3>하나를 선택해 보세요!</h3>
+          <div style={{ display: "flex", justifyContent: "center", gap: "24px" }}>
+            {fortunes.map((fortune, idx) => (
+              <img
+                key={idx}
+                src="/FortuneCookie.png"
+                alt={`포춘 쿠키 ${idx + 1}`}
+                style={{ width: "100px", cursor: "pointer" }}
+                onClick={() => selectFortune(idx)}
+              />
+            ))}
+          </div>
+        </>
+      ) : (
+        <div
+          style={{
+            border: "2px solid #8B5C2A",
+            background: "#F5E9DA",
+            borderRadius: "16px",
+            width: "500px",
+            margin: "15px auto",
+          }}
+        >
+          <h3>오늘의 명언</h3>
+          <p>{selected.en}</p>
+          <p>{selected.ko}</p>
+        </div>
+      )}
     </div>
   );
 };
