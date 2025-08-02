@@ -59,4 +59,4 @@ export const useDice = () => {  //컴포넌트에서 const { diceValue, rollDice
   //컴포넌트에서 사용할 수 있도록 현재 상태와 함수들을 외부에 전달하는 것임
   //이제 jsx파일의 컴포넌트에서 useDice()로 불러와서 쓸 수 있게 됨
 
-}; //훅 종료
+}; //훅 정의 종료

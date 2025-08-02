@@ -15,7 +15,7 @@ const Dice = styled.div`
 
 export const RollDice = () => {
   const { diceValue, rollDice, rolling } = useDice();
-  // const { something... } = useSomething();
+  // const { something... } = useSomething(); <- 이런 형태로 활용!
   // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
   return (
     <div>
