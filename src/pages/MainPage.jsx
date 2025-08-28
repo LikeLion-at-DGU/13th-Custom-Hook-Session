@@ -3,7 +3,7 @@ import { ConfettiExample } from "../components/ConfettiExample";
 import { CountdownExample } from "../components/CountdownExample";
 import { WindowSizeExample } from "../components/WindowSizeExample";
 import { FetchExample } from "../components/FetchExample";
-import { YourOwnHookPage } from "../components/YourOwnHookPage";
+import { Counter } from "../components/Counter";
 import "../styles/Main.styled.css";
 
 export const MainPage = () => {
