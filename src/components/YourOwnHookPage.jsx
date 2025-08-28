@@ -1,11 +1,14 @@
-import { useSomething } from "../hooks/useSomething";
+import { useSomething } from "../hooks/useTodayDate";
 
 export const YourOwnHookPage = () => {
-  // const { something... } = useSomething();
-  // 하단 UI에 자유롭게 위에서 받아온 값들을 바인딩 해보세요~
+  const { formattedDate, progressPercent } = useSomething();
+
   return (
     <div>
-      <h2>useSomething 실습</h2>
+      <h2>오늘의 날짜와 올해 경과율</h2>
+      <p>오늘은 {formattedDate}입니다.</p>
+      <p>이번 년도의 {progressPercent}%가 지났습니다.</p>
     </div>
   );
 };
+
